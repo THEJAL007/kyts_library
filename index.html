@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kyts Library | Book rentals in Bengaluru</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container header-inner">
+      <a href="#home" class="logo">Kyts Library</a>
+      <nav class="nav" id="nav">
+        <a href="#home">Home</a>
+        <a href="#how">How it works</a>
+        <a href="#features">Features</a>
+        <a href="#top10">Top 10</a>
+        <a href="#plans">Pricing</a>
+        <a href="#catalog">Catalog</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="btn btn-dark" id="authBtn">Login / Sign up</button>
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu">Menu</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="container hero-inner">
+        <div>
+          <span class="badge">Modern library platform</span>
+          <h1>Reading made simple</h1>
+          <p>Discover, rent, and enjoy books with flexible monthly plans. Designed for readers who value clarity, comfort, and good prices.</p>
+          <div class="btn-row">
+            <a href="#catalog" class="btn btn-dark">Browse books</a>
+            <a href="#plans" class="btn btn-light">View plans</a>
+          </div>
+        </div>
+        <div class="slider" id="heroSlider" aria-label="Featured books">
+          <div class="slider-window"><div class="slider-track" id="heroTrack"></div></div>
+          <div class="slider-controls">
+            <button class="round-btn" id="heroPrev" aria-label="Previous book">&#8249;</button>
+            <div class="dots" id="heroDots"></div>
+            <button class="round-btn" id="heroNext" aria-label="Next book">&#8250;</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="section alt" id="features">
+      <div class="container">
+        <h2>Why readers love us</h2>
+        <p class="sub">Everything you need for a smooth, distraction-free reading experience.</p>
+        <div class="grid-3">
+          <div class="card"><h3>Wide collection</h3><p>Fiction, non-fiction and a large range of books in Indian languages.</p></div>
+          <div class="card"><h3>Flexible rentals</h3><p>Rent and swap books monthly on your own terms, with no long-term commitment.</p></div>
+          <div class="card"><h3>Affordable pricing</h3><p>Access premium hardcover books starting at just ₹450 a month.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TOP 10 -->
+    <section class="section" id="top10">
+      <div class="container">
+        <h2>Top 10 by category</h2>
+        <p class="sub">Our most borrowed books, ranked.</p>
+        <div class="tabs" id="topTabs"></div>
+        <div class="top-row" id="topRow"></div>
+      </div>
+    </section>
+
+    <!-- PHILOSOPHY + PHOTOS -->
+    <section class="section alt">
+      <div class="container split">
+        <div class="gallery" id="gallery"></div>
+        <div>
+          <h2>A better way to read</h2>
+          <p class="sub">Kyts Library connects readers with books in the simplest, smartest and most affordable way.</p>
+          <ul class="checks">
+            <li>Thousands of curated titles across genres</li>
+            <li>Skip or cancel your monthly plan anytime</li>
+            <li>Friendly support whenever you need it</li>
+            <li>Doorstep delivery available</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- GENRES -->
+    <section class="section">
+      <div class="container">
+        <h2>Explore top genres</h2>
+        <p class="sub">Hand-picked for reading pleasure.</p>
+        <div class="grid-4">
+          <div class="card"><h3>Indian languages</h3><p>Classic and modern books in Indian languages only.</p></div>
+          <div class="card"><h3>Global literature</h3><p>Prize-winning books from around the world.</p></div>
+          <div class="card"><h3>Science fiction</h3><p>Future technology, space and big ideas.</p></div>
+          <div class="card"><h3>Fiction</h3><p>Fantasy, thrillers, drama and many more types of stories.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CATALOG (open to guests) -->
+    <section class="section alt" id="catalog">
+      <div class="container">
+        <h2>Catalog</h2>
+        <p class="sub">Browse freely. You only need an account when you borrow.</p>
+        <div class="filters">
+          <input type="search" id="search" placeholder="Search by title or author" aria-label="Search books">
+          <select id="filter" aria-label="Filter by category"></select>
+        </div>
+        <div class="grid-books" id="catalogGrid"></div>
+        <p class="empty" id="empty" hidden>No books match your search.</p>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="section" id="how">
+      <div class="container">
+        <h2>How it works</h2>
+        <p class="sub">Start reading in minutes.</p>
+        <div class="grid-3">
+          <div class="card"><span class="step">1</span><h3>Sign up and log in</h3><p>Create your account. Our team will help you set up your dashboard.</p></div>
+          <div class="card"><span class="step">2</span><h3>Browse our catalog</h3><p>Explore thousands of titles across fiction, non-fiction and regional books.</p></div>
+          <div class="card"><span class="step">3</span><h3>Build your shelf</h3><p>Pick the books you want to read and add them to your personal list.</p></div>
+          <div class="card"><span class="step">4</span><h3>We prepare your books</h3><p>Every book is cleaned and checked before it ships.</p></div>
+          <div class="card"><span class="step">5</span><h3>Doorstep delivery</h3><p>Your books are delivered to your chosen location.</p></div>
+          <div class="card"><span class="step">6</span><h3>Read and swap</h3><p>Enjoy your books and switch them whenever you want.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PLANS -->
+    <section class="section alt" id="plans">
+      <div class="container">
+        <h2>Reading plans</h2>
+        <p class="sub">No setup fees or hidden charges. Borrowing starts at just ₹450 / month.</p>
+        <div class="grid-3" id="plansGrid"></div>
+        <div class="note">
+          <p><strong>Note:</strong> Standard daily rental fees apply automatically after your membership expires.</p>
+          <p><strong>Accepted modes:</strong> Cash / GPay / PhonePe / Paytm</p>
+          <p><a href="tel:+918884174000">Call support: +91 8884174000</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" id="contact">
+    <div class="container grid-3">
+      <div>
+        <h4>Contact us</h4>
+        <p>Email: <a href="mailto:thekytslibrary@gmail.com">thekytslibrary@gmail.com</a></p>
+        <p>Phone: <a href="tel:+918884174000">+91 8884174000</a></p>
+      </div>
+      <div>
+        <h4>Address</h4>
+        <p>No.150, 1st floor,<br>Above Fashion Trends, RK Hegdenagar,<br>Dr. Sivaram Karanth Nagar Post, Bengaluru - 560077<br>Next to Bharat Petrol Bunk</p>
+      </div>
+      <div>
+        <h4>Payments accepted</h4>
+        <p>Cash, GPay, PhonePe, Paytm</p>
+        <p>Doorstep delivery available</p>
+      </div>
+    </div>
+    <p class="copyright">© 2026 Kyts Library. All rights reserved.</p>
+  </footer>
+
+  <dialog id="authDialog">
+    <form id="authForm" method="dialog" class="dialog-body">
+      <button type="button" class="close" data-close aria-label="Close">&times;</button>
+      <h3 id="authTitle">Login</h3>
+      <p class="sub" id="authMsg">Welcome back.</p>
+      <label id="nameLabel" hidden>Name<input type="text" id="authName" placeholder="Your full name"></label>
+      <label>Email<input type="email" id="authEmail" placeholder="name@example.com" required></label>
+      <label>Password<input type="password" id="authPass" placeholder="At least 6 characters" minlength="6" required></label>
+      <button type="submit" class="btn btn-dark" id="authSubmit">Login</button>
+      <p class="switch"><span id="authSwitchText">New here?</span> <button type="button" class="link" id="authSwitch">Sign up</button></p>
+      <p class="hint">Demo only. Accounts are saved in this browser until a backend is added.</p>
+    </form>
+  </dialog>
+
+  <dialog id="bookDialog"><div class="dialog-body" id="bookBody"></div></dialog>
+  <div class="toast" id="toast" role="status"></div>
+
+  <script src="books.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
